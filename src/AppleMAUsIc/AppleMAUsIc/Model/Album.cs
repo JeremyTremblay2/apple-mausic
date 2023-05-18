@@ -7,6 +7,8 @@ namespace AppleMAUsIc.Model
 
         public string Author { get; private set; }
 
+        public string CoverImageName { get; private set; }
+
         public string KindOfMusic { get; private set; }
 
         public DateTime ReleaseDate { get; private set; }
@@ -27,7 +29,7 @@ namespace AppleMAUsIc.Model
             get => new TimeSpan(Tracks.Sum(t => t.Duration.Ticks));
         }
 
-        public Album(string name, string author, string kindOfMusic, DateTime releaseDate,
+        public Album(string name, string author, string coverImageName, string kindOfMusic, DateTime releaseDate,
             string copyright, IList<Track> tracks, Quality soundQuality = Quality.LOSSLESS)
         {
             if (string.IsNullOrWhiteSpace(name))
@@ -44,6 +46,7 @@ namespace AppleMAUsIc.Model
             }
             Name = name;
             Author = author;
+            CoverImageName = coverImageName;
             KindOfMusic = kindOfMusic;
             ReleaseDate = releaseDate;
             SoundQuality = soundQuality;
