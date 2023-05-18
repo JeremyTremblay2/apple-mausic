@@ -7,9 +7,9 @@ namespace AppleMAUsIc.Model
 
 		public TimeSpan Duration { get; private set; }
 
-		public bool Favorite { get; private set; }
+		public bool IsSingle { get; private set; }
 
-        public Track(string title, TimeSpan duration, bool favorite = false)
+        public Track(string title, TimeSpan duration, bool isSingle = false)
         {
             if (string.IsNullOrWhiteSpace(title))
             {
@@ -21,7 +21,7 @@ namespace AppleMAUsIc.Model
             }
             Title = title;
             Duration = duration;
-            Favorite = favorite;
+            IsSingle = isSingle;
         }
 
         public override bool Equals(object obj)

@@ -52,6 +52,16 @@
 	  <MauiImage Include="Resources\Images\Icons\ic_download.svg" />
 	  <MauiImage Include="Resources\Images\Icons\ic_check.svg" />
 	  <MauiImage Include="Resources\Images\Icons\ic_back_arrow.svg" />
+	  <MauiImage Include="Resources\Images\Covers\speak_no_evil.png" />
+	  <MauiImage Include="Resources\Images\Covers\recovery.png" />
+	  <MauiImage Include="Resources\Images\Covers\paradize.png" />
+	  <MauiImage Include="Resources\Images\Covers\night_visions.png" />
+	  <MauiImage Include="Resources\Images\Covers\native.png" />
+	  <MauiImage Include="Resources\Images\Covers\multitude.png" />
+	  <MauiImage Include="Resources\Images\Covers\mini_world.png" />
+	  <MauiImage Include="Resources\Images\Covers\everest.png" />
+	  <MauiImage Include="Resources\Images\Covers\ensemble.png" />
+	  <MauiImage Include="Resources\Images\Covers\different_world.png" />
 	</ItemGroup>
 	<ItemGroup>
 		<!-- App Icon -->
@@ -104,10 +114,14 @@
 	  <None Remove="Resources\Images\Covers\paradize.png" />
 	  <None Remove="Resources\Images\Covers\speak_no_evil.png" />
 	  <None Remove="Model\" />
+	  <None Remove="Pages\CustomControls\" />
+	  <None Remove="Converters\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Images\Covers\" />
 	  <Folder Include="Model\" />
+	  <Folder Include="Pages\CustomControls\" />
+	  <Folder Include="Converters\" />
 	</ItemGroup>
 	<ItemGroup>
 	  <BundleResource Include="**/*" />
@@ -121,5 +135,17 @@
 	  <BundleResource Include="**/*" />
 	  <BundleResource Include="**/*" />
 	  <BundleResource Include="**/*" />
+	</ItemGroup>
+	<ItemGroup>
+	  <BundleResource Remove="Resources\Images\Covers\speak_no_evil.png" />
+	  <BundleResource Remove="Resources\Images\Covers\recovery.png" />
+	  <BundleResource Remove="Resources\Images\Covers\paradize.png" />
+	  <BundleResource Remove="Resources\Images\Covers\night_visions.png" />
+	  <BundleResource Remove="Resources\Images\Covers\native.png" />
+	  <BundleResource Remove="Resources\Images\Covers\multitude.png" />
+	  <BundleResource Remove="Resources\Images\Covers\mini_world.png" />
+	  <BundleResource Remove="Resources\Images\Covers\everest.png" />
+	  <BundleResource Remove="Resources\Images\Covers\ensemble.png" />
+	  <BundleResource Remove="Resources\Images\Covers\different_world.png" />
 	</ItemGroup>
 </Project>
