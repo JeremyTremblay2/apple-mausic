@@ -4,12 +4,40 @@
     xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
     xmlns:local="clr-namespace:AppleMAUsIc"
+    xmlns:pages="clr-namespace:AppleMAUsIc.Pages"
     Shell.FlyoutBehavior="Disabled">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:MainPage}"
-        Route="MainPage" />
+    <TabBar>
+        <ShellContent
+            Title="Listen"
+            ContentTemplate="{DataTemplate pages:ListenPage}"
+            Route="ListenPage"
+            Icon="ic_play_circle"/>
+
+        <ShellContent
+            Title="Explore"
+            ContentTemplate="{DataTemplate pages:ExplorePage}"
+            Route="ExplorePage"
+            Icon="ic_four_squares"/>
+
+        <ShellContent
+            Title="Radio"
+            ContentTemplate="{DataTemplate pages:RadioPage}"
+            Route="RadioPage"
+            Icon="ic_radio"/>
+
+        <ShellContent
+            Title="Library"
+            ContentTemplate="{DataTemplate local:MainPage}"
+            Route="MainPage"
+            Icon="ic_music_library"/>
+
+        <ShellContent
+            Title="Search"
+            ContentTemplate="{DataTemplate pages:SearchPage}"
+            Route="SearchPage"
+            Icon="ic_search"/>
+    </TabBar>
 
 </Shell>
 

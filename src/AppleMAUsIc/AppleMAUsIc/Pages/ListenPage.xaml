@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppleMAUsIc.Pages.ListenPage"
+             Title="ListenPage">
+
+    <VerticalStackLayout
+        Margin="24, 16, 24, 16">
+        <Border MaximumHeightRequest="300"
+                HorizontalOptions="Center">
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10">
+
+                </RoundRectangle>
+            </Border.StrokeShape>
+            <Image
+                Aspect="AspectFill"
+                Source="chaleur_humaine.png">
+                <Image.Shadow>
+                    <Shadow Brush="{StaticResource Black}"
+                            Offset="20, 20"
+                            Radius="20"
+                            Opacity="0.8" />
+                </Image.Shadow>
+            </Image>
+            <Border.Shadow>
+                <Shadow Brush="{StaticResource Black}"
+                        Offset="10, 10"
+                        Radius="10"
+                        Opacity="0.2" />
+            </Border.Shadow>
+        </Border>
+        
+        <Label
+            FontSize="Title"
+            Text="Speak No Evil"
+            FontAttributes="Bold"
+            FontFamily=""
+            HorizontalOptions="Center"
+            Margin="0, 16, 0, 0"/>
+        <Label
+            FontSize="Subtitle"
+            Text="Listen"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="{StaticResource Primary}"/>
+        <Label
+            FontSize="Small"
+            Text="Jazz・1966・Lossless"
+            FontAttributes="Bold"
+            FontFamily=""
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            TextColor="{StaticResource Gray400}"
+            Margin="0, 0, 0, 16"/>
+
+        <HorizontalStackLayout
+            HorizontalOptions="Center">
+            <Border
+                BackgroundColor="{StaticResource Gray050}"
+                StrokeThickness="0"
+                Margin="0, 0, 10, 0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Border.Content>
+                    <HorizontalStackLayout
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Margin="32, 6, 32, 6"
+                        Padding="8, 8, 8, 8">
+                        <Image
+                            Source="ic_play.png"
+                            MaximumHeightRequest="24"
+                            MaximumWidthRequest="24"/>
+                        <Label
+                            Text="Lecture"
+                            FontAttributes="Bold"
+                            FontFamily=""
+                            FontSize="Default"
+                            TextColor="{StaticResource Primary}"
+                            Margin="8, 0, 0, 0"
+                            VerticalOptions="Center"/>
+                    </HorizontalStackLayout>
+                </Border.Content>
+            </Border>
+            <Border
+                BackgroundColor="{StaticResource Gray050}"
+                StrokeThickness="0"
+                Margin="10, 0, 0, 0">
+                <Border.StrokeShape>
+                    <RoundRectangle CornerRadius="10" />
+                </Border.StrokeShape>
+                <Border.Content>
+                    <HorizontalStackLayout
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Margin="32, 6, 32, 6"
+                        Padding="8, 0, 8, 0">
+                        <Image
+                            Source="ic_twisted_arrows.png"
+                            MaximumHeightRequest="24"
+                            MaximumWidthRequest="24" />
+                        <Label
+                            Text="Aléatoire"
+                            FontAttributes="Bold"
+                            FontFamily=""
+                            FontSize="Default"
+                            TextColor="{StaticResource Primary}"
+                            Margin="8, 0, 0, 0"
+                            VerticalOptions="Center"
+                            HorizontalOptions="Center" />
+                    </HorizontalStackLayout>
+                </Border.Content>
+            </Border>
+        </HorizontalStackLayout>
+
+        <Label
+            Text="31 décembre 1959"
+            FontSize="Small"
+            TextColor="{StaticResource Gray400}"
+            Margin="0, 16, 0, 0"/>
+        <Label
+            Text="7 morceaux, 48 minutes"
+            FontSize="Small"
+            TextColor="{StaticResource Gray400}" />
+        <Label
+            Text="1999 Blue Notes Records"
+            FontSize="Small"
+            TextColor="{StaticResource Gray400}" />
+
+
+    </VerticalStackLayout>
+</ContentPage>

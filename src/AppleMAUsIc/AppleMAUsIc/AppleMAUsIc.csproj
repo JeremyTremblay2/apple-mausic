@@ -30,6 +30,30 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
+	<ItemGroup>
+	  <MauiImage Include="Resources\Images\Icons\ic_3_dots.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_albums.svg" />
+	  <MauiImage Include="Resources\Images\chaleur_humaine.png" />
+	  <MauiImage Include="Resources\Images\dotnet_bot.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_four_squares.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_radio.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_play_circle.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_music_library.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_search.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_twisted_arrows.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_play.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_star.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_music_profile.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_music_playlist.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_microphone.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_fast_forward.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_download.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_check.svg" />
+	  <MauiImage Include="Resources\Images\Icons\ic_back_arrow.svg" />
+	</ItemGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -38,7 +62,8 @@
 		<MauiSplashScreen Include="Resources\Splash\splash.svg" Color="#512BD4" BaseSize="128,128" />
 
 		<!-- Images -->
-		<MauiImage Include="Resources\Images\*" />
+		
+		<MauiImage Update="Resources\Images\Icons\*" BaseSize="32,32" />
 		<MauiFont Include="Resources\Fonts\*" />
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
@@ -48,5 +73,25 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
-
+	<ItemGroup>
+	  <None Remove="Resources\Images\Icons\ic_3_dots.svg" />
+	  <None Remove="Resources\Images\Icons\ic_albums.svg" />
+	  <None Remove="Resources\Images\Icons\ic_play_circle.svg" />
+	  <None Remove="Resources\Images\chaleur_humaine.png" />
+	  <None Remove="Resources\Images\dotnet_bot.svg" />
+	  <None Remove="Resources\Images\Icons\ic_four_squares.svg" />
+	  <None Remove="Resources\Images\Icons\ic_radio.svg" />
+	  <None Remove="Resources\Images\Icons\ic_music_library.svg" />
+	  <None Remove="Resources\Images\Icons\ic_search.svg" />
+	  <None Remove="Resources\Images\Icons\ic_twisted_arrows.svg" />
+	  <None Remove="Resources\Images\Icons\ic_play.svg" />
+	  <None Remove="Resources\Images\Icons\ic_star.svg" />
+	  <None Remove="Resources\Images\Icons\ic_music_profile.svg" />
+	  <None Remove="Resources\Images\Icons\ic_music_playlist.svg" />
+	  <None Remove="Resources\Images\Icons\ic_microphone.svg" />
+	  <None Remove="Resources\Images\Icons\ic_fast_forward.svg" />
+	  <None Remove="Resources\Images\Icons\ic_download.svg" />
+	  <None Remove="Resources\Images\Icons\ic_check.svg" />
+	  <None Remove="Resources\Images\Icons\ic_back_arrow.svg" />
+	</ItemGroup>
 </Project>
