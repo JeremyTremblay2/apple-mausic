@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ViewCell xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppleMAUsIc.Pages.CustomControls.TrackCellView">
+
+    <Grid VerticalOptions="Center" Padding="0, 4, 0, 2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+
+        <Image
+            Grid.Column="0"
+            Source="ic_star.png"
+            MaximumWidthRequest="10"
+            IsVisible="{Binding IsSingle}"/>
+        
+        <Label
+            Grid.Column="1"
+            Margin="12, 0"
+            FontSize="Default"
+            Text="{Binding Position, FallbackValue=1}"
+            TextColor="{StaticResource Gray400}"/>
+
+        <Label
+            Grid.Column="2"
+            FontSize="Default"
+            Text="{Binding TrackTitle, FallbackValue='Counting Stars'}"
+            MaxLines="1"/>
+
+        <Image
+            Grid.Column="3"
+            Margin="8, 0, 8, 0"
+            Source="ic_download.png"
+            MaximumWidthRequest="12" />
+
+        <Image
+            Grid.Column="4"
+            Margin="8, 0, 0, 0"
+            Source="ic_3_dots.png"
+            MaximumWidthRequest="18"/>
+    </Grid>
+</ViewCell>

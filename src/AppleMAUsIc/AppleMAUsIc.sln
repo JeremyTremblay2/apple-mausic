@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 17.0.31611.283
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMAUsIc", "AppleMAUsIc\AppleMAUsIc.csproj", "{86CCF14F-9FD7-4B1E-9C2E-3119CA03ECAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AppleMAUsIc", "AppleMAUsIc\AppleMAUsIc.csproj", "{6A606C3D-198E-4A87-B81B-7B4B8A61158E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,12 +11,12 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{86CCF14F-9FD7-4B1E-9C2E-3119CA03ECAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{86CCF14F-9FD7-4B1E-9C2E-3119CA03ECAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{86CCF14F-9FD7-4B1E-9C2E-3119CA03ECAC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
-		{86CCF14F-9FD7-4B1E-9C2E-3119CA03ECAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{86CCF14F-9FD7-4B1E-9C2E-3119CA03ECAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{86CCF14F-9FD7-4B1E-9C2E-3119CA03ECAC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{6A606C3D-198E-4A87-B81B-7B4B8A61158E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A606C3D-198E-4A87-B81B-7B4B8A61158E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A606C3D-198E-4A87-B81B-7B4B8A61158E}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6A606C3D-198E-4A87-B81B-7B4B8A61158E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A606C3D-198E-4A87-B81B-7B4B8A61158E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A606C3D-198E-4A87-B81B-7B4B8A61158E}.Release|Any CPU.Deploy.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

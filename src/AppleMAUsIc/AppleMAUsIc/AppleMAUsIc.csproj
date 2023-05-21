@@ -16,7 +16,7 @@
 
 		<!-- App Identifier -->
 		<ApplicationId>com.companyname.applemausic</ApplicationId>
-		<ApplicationIdGuid>64405867-356d-4c01-bf09-5f9d016ced59</ApplicationIdGuid>
+		<ApplicationIdGuid>4c077844-95e6-4a02-aaa7-bdc2fff101d5</ApplicationIdGuid>
 
 		<!-- Versions -->
 		<ApplicationDisplayVersion>1.0</ApplicationDisplayVersion>
@@ -30,6 +30,9 @@
 		<SupportedOSPlatformVersion Condition="$([MSBuild]::GetTargetPlatformIdentifier('$(TargetFramework)')) == 'tizen'">6.5</SupportedOSPlatformVersion>
 	</PropertyGroup>
 
+	<PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net7.0-ios|AnyCPU'">
+	  <CreatePackage>false</CreatePackage>
+	</PropertyGroup>
 	<ItemGroup>
 		<!-- App Icon -->
 		<MauiIcon Include="Resources\AppIcon\appicon.svg" ForegroundFile="Resources\AppIcon\appiconfg.svg" Color="#512BD4" />
@@ -39,14 +42,111 @@
 
 		<!-- Images -->
 		<MauiImage Include="Resources\Images\*" />
+		<MauiImage Include="Resources\Images\Icons\*" BaseSize="28,28" />
 		<MauiFont Include="Resources\Fonts\*" />
 
 		<!-- Raw Assets (also remove the "Resources\Raw" prefix) -->
 		<MauiAsset Include="Resources\Raw\**" LogicalName="%(RecursiveDir)%(Filename)%(Extension)" />
+		<MauiImage Include="Resources\Images\Icons\ic_3_dots.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_albums.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_back_arrow.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_check.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_download.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_explore.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_fast_forward.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_four_squares.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_microphone.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_music_library.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_music_playlist.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_music_profile.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_play.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_play_circle.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_radio.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_search.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_star.svg" />
+		<MauiImage Include="Resources\Images\Icons\ic_twisted_arrows.svg" />
+		<MauiImage Include="Resources\Images\Covers\different_world.jpg" />
+		<MauiImage Include="Resources\Images\Covers\everest.jpg" />
+		<MauiImage Include="Resources\Images\Covers\ensemble.jpg" />
+		<MauiImage Include="Resources\Images\Covers\la_fete_est_finie.jpg" />
+		<MauiImage Include="Resources\Images\Covers\mini_world.jpg" />
+		<MauiImage Include="Resources\Images\Covers\multitude.jpg" />
+		<MauiImage Include="Resources\Images\Covers\night_visions.jpg" />
+		<MauiImage Include="Resources\Images\Covers\paradize.jpg" />
+		<MauiImage Include="Resources\Images\Covers\recovery.jpg" />
+		<MauiImage Include="Resources\Images\Covers\speak_no_evil.jpg" />
+		<MauiImage Include="Resources\Images\Covers\native_cover.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="7.0.0" />
 	</ItemGroup>
 
+	<ItemGroup>
+	  <MauiXaml Update="Pages\RadioPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\ExplorePage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\ListenPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\SearchPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\CustomControls\TrackCellView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\LibraryPage.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\CustomControls\MusicPlayingBarView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\CustomControls\AlbumCoverView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\CustomControls\ImageButtonView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	</ItemGroup>
+	<ItemGroup>
+	  <None Remove="Resources\Images\Icons\" />
+	  <None Remove="Resources\Images\Icons\ic_3_dots.svg" />
+	  <None Remove="Resources\Images\Icons\ic_albums.svg" />
+	  <None Remove="Resources\Images\Icons\ic_back_arrow.svg" />
+	  <None Remove="Resources\Images\Icons\ic_check.svg" />
+	  <None Remove="Resources\Images\Icons\ic_download.svg" />
+	  <None Remove="Resources\Images\Icons\ic_explore.svg" />
+	  <None Remove="Resources\Images\Icons\ic_fast_forward.svg" />
+	  <None Remove="Resources\Images\Icons\ic_four_squares.svg" />
+	  <None Remove="Resources\Images\Icons\ic_microphone.svg" />
+	  <None Remove="Resources\Images\Icons\ic_music_library.svg" />
+	  <None Remove="Resources\Images\Icons\ic_music_playlist.svg" />
+	  <None Remove="Resources\Images\Icons\ic_music_profile.svg" />
+	  <None Remove="Resources\Images\Icons\ic_play_circle.svg" />
+	  <None Remove="Resources\Images\Icons\ic_play.svg" />
+	  <None Remove="Resources\Images\Icons\ic_radio.svg" />
+	  <None Remove="Resources\Images\Icons\ic_search.svg" />
+	  <None Remove="Resources\Images\Icons\ic_star.svg" />
+	  <None Remove="Resources\Images\Icons\ic_twisted_arrows.svg" />
+	  <None Remove="Resources\Images\Covers\" />
+	  <None Remove="Resources\Images\Covers\different_world.jpg" />
+	  <None Remove="Resources\Images\Covers\ensemble.jpg" />
+	  <None Remove="Resources\Images\Covers\everest.jpg" />
+	  <None Remove="Resources\Images\Covers\la_fete_est_finie.jpg" />
+	  <None Remove="Resources\Images\Covers\mini_world.jpg" />
+	  <None Remove="Resources\Images\Covers\multitude.jpg" />
+	  <None Remove="Resources\Images\Covers\night_visions.jpg" />
+	  <None Remove="Resources\Images\Covers\paradize.jpg" />
+	  <None Remove="Resources\Images\Covers\recovery.jpg" />
+	  <None Remove="Resources\Images\Covers\speak_no_evil.jpg" />
+	  <None Remove="Resources\Images\Covers\native.jpg" />
+	  <None Remove="Resources\Images\Covers\native_cover.jpg" />
+	</ItemGroup>
+	<ItemGroup>
+	  <Folder Include="Resources\Images\Icons\" />
+	  <Folder Include="Resources\Images\Covers\" />
+	</ItemGroup>
 </Project>
