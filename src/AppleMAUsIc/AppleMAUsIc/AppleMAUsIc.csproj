@@ -107,6 +107,9 @@
 	  <MauiXaml Update="Pages\CustomControls\AlbumCoverView.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\CustomControls\ImageButtonView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
 	</ItemGroup>
 	<ItemGroup>
 	  <None Remove="Resources\Images\Icons\" />

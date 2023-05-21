@@ -50,66 +50,20 @@
                     <ColumnDefinition Width="*" />
                 </Grid.ColumnDefinitions>
 
-                <Border
-                    Grid.Column="0"
-                    StrokeThickness="0"
-                    MaximumWidthRequest="200"
-                    Margin="0, 0, 10, 0">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="10" />
-                    </Border.StrokeShape>
-                    <Border.Content>
-                        <HorizontalStackLayout
-                            VerticalOptions="Center"
-                            HorizontalOptions="Center"
-                            Margin="8, 6, 8, 6"
-                            Padding="8, 8, 8, 8">
-                            <Image
-                                Source="ic_play.png"
-                                MaximumHeightRequest="24"
-                                MaximumWidthRequest="24"/>
-                            <Label
-                                Text="Lecture"
-                                FontAttributes="Bold"
-                                FontFamily=""
-                                FontSize="Default"
-                                TextColor="{StaticResource Primary}"
-                                Margin="8, 0, 0, 0"
-                                VerticalOptions="Center"/>
-                        </HorizontalStackLayout>
-                    </Border.Content>
-                </Border>
+                <controls:ImageButtonView
+                    Text="Lecture"
+                    MinimumButtonWidthRequest="200"
+                    MaximumIconHeightRequest="24"
+                    MaximumIconWidthRequest="24"
+                    ImageSource="ic_play.png" />
 
-                <Border
+                <controls:ImageButtonView
                     Grid.Column="1"
-                    StrokeThickness="0"
-                    MaximumWidthRequest="200"
-                    Margin="10, 0, 0, 0">
-                    <Border.StrokeShape>
-                        <RoundRectangle CornerRadius="10" />
-                    </Border.StrokeShape>
-                    <Border.Content>
-                        <HorizontalStackLayout
-                            VerticalOptions="Center"
-                            HorizontalOptions="Center"
-                            Margin="8, 6, 8, 6"
-                            Padding="8, 0, 8, 0">
-                            <Image
-                                Source="ic_twisted_arrows.png"
-                                MaximumHeightRequest="24"
-                                MaximumWidthRequest="24" />
-                            <Label
-                                Text="Aléatoire"
-                                FontAttributes="Bold"
-                                FontFamily=""
-                                FontSize="Default"
-                                TextColor="{StaticResource Primary}"
-                                Margin="8, 0, 0, 0"
-                                VerticalOptions="Center"
-                                HorizontalOptions="Center" />
-                        </HorizontalStackLayout>
-                    </Border.Content>
-                </Border>
+                    Text="Aléatoire"
+                    MinimumButtonWidthRequest="200"
+                    MaximumIconHeightRequest="24"
+                    MaximumIconWidthRequest="24"
+                    ImageSource="ic_twisted_arrows.png" />
             </Grid>
 
             <Line StrokeThickness="1" Margin="0, 28, 0, 0"/>
@@ -117,8 +71,7 @@
             <ListView
                 ItemsSource="{Binding Tracks}"
                 Margin="-12, 0, 0, 0"
-                SelectionMode="None"
-                BackgroundColor="{StaticResource Key=Black}">
+                SelectionMode="None">
                 <ListView.ItemTemplate>
                     <DataTemplate x:DataType="model:Track">
                         <controls:TrackCellView
@@ -152,7 +105,6 @@
                 Text="{Binding Copyright}"
                 FontSize="Small"
                 TextColor="{StaticResource Gray400}" />
-
         </VerticalStackLayout>
     </ScrollView>
 </ContentPage>

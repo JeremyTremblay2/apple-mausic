@@ -22,12 +22,14 @@
             Grid.Column="1"
             Margin="12, 0"
             FontSize="Default"
-            Text="{Binding Position, FallbackValue=1}" />
+            Text="{Binding Position, FallbackValue=1}"
+            TextColor="{StaticResource Gray400}"/>
 
         <Label
             Grid.Column="2"
             FontSize="Default"
-            Text="{Binding TrackTitle, FallbackValue='Counting Stars'}" />
+            Text="{Binding TrackTitle, FallbackValue='Counting Stars'}"
+            MaxLines="1"/>
 
         <Image
             Grid.Column="3"
