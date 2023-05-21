@@ -21,9 +21,9 @@ public partial class TrackCellView : ViewCell
     }
 
     public static readonly BindableProperty TrackTitleProperty =
-        BindableProperty.Create(nameof(Title), typeof(string), typeof(TrackCellView), string.Empty);
+        BindableProperty.Create(nameof(TrackTitle), typeof(string), typeof(TrackCellView), string.Empty);
 
-    public string Title
+    public string TrackTitle
     {
         get => (string) GetValue(TrackCellView.TrackTitleProperty);
         set => SetValue(TrackCellView.TrackTitleProperty, value);
@@ -31,7 +31,7 @@ public partial class TrackCellView : ViewCell
 
     public TrackCellView()
 	{
-        BindingContext = this;
         InitializeComponent();
+        View.BindingContext = this;
     }
 }

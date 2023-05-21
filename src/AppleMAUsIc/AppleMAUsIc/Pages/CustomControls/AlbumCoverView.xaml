@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:customcontrols="clr-namespace:AppleMAUsIc.Pages.CustomControls"
+             x:DataType="customcontrols:AlbumCoverView"
+             x:Class="AppleMAUsIc.Pages.CustomControls.AlbumCoverView">
+    <VerticalStackLayout>
+        <Border MaximumHeightRequest="{Binding ImageHeight}"
+                MaximumWidthRequest="{Binding ImageWidth}"
+                HorizontalOptions="Center"
+                Margin="14, 10">
+            <Image
+                Aspect="AspectFill"
+                Source="{Binding CoverImageName}">
+                <Image.Shadow>
+                    <Shadow Offset="20, 20"
+                            Radius="20"
+                            Opacity="0.8" />
+                </Image.Shadow>
+            </Image>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10" />
+            </Border.StrokeShape>
+            <Border.Shadow>
+                <Shadow Offset="10, 10"
+                        Radius="10"
+                        Opacity="0.2" />
+            </Border.Shadow>
+        </Border>
+    </VerticalStackLayout>
+</ContentView>
+

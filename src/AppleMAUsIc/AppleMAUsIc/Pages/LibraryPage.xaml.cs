@@ -10,7 +10,7 @@ public partial class LibraryPage : ContentPage
 	{
         var albums = new Stub().LoadAlbums();
         album = albums[new Random().Next(albums.Count)];
-        BindingContext = album;
         InitializeComponent();
-	}
+        BindingContext = album;
+    }
 }

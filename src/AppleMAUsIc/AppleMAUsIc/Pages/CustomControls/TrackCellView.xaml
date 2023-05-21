@@ -27,7 +27,7 @@
         <Label
             Grid.Column="2"
             FontSize="Default"
-            Text="{Binding Title, FallbackValue='Counting Stars'}" />
+            Text="{Binding TrackTitle, FallbackValue='Counting Stars'}" />
 
         <Image
             Grid.Column="3"
