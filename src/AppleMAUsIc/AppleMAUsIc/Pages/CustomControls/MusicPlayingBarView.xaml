@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppleMAUsIc.Pages.CustomControls.MusicPlayingBarView">
+    <Grid VerticalOptions="Center">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="auto" />
+            <ColumnDefinition Width="auto" />
+        </Grid.ColumnDefinitions>
+
+        <Border MaximumHeightRequest="60"
+                        MaximumWidthRequest="60"
+                        HorizontalOptions="Center"
+                        Margin="14, 10">
+            <Image
+                Aspect="AspectFill"
+                Source="{Binding CoverImageName}">
+                <Image.Shadow>
+                    <Shadow Offset="20, 20"
+                            Radius="20"
+                            Opacity="0.8" />
+                </Image.Shadow>
+            </Image>
+            <Border.StrokeShape>
+                <RoundRectangle CornerRadius="10" />
+            </Border.StrokeShape>
+            <Border.Shadow>
+                <Shadow Offset="10, 10"
+                        Radius="10"
+                        Opacity="0.2" />
+            </Border.Shadow>
+
+        </Border>
+        <Label
+            Grid.Column="1"
+            Text="{Binding Title, FallbackValue='Counting Stars'}"
+            FontSize="Header"
+            VerticalOptions="Center" 
+            HorizontalOptions="Start"/>
+
+        <Image
+            Grid.Column="2"
+            Margin="10, 6"
+            Source="ic_play.png"
+            WidthRequest="32"
+            HeightRequest="32" />
+
+        <Image
+            Grid.Column="3"
+            Margin="10, 0, 20, 0"
+            Source="ic_fast_forward.png"
+            WidthRequest="40"
+            HeightRequest="40" />
+    </Grid>
+</ContentView>
+
