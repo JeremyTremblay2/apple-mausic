@@ -9,6 +9,8 @@ namespace AppleMAUsIc.Model
 
 		public bool IsSingle { get; private set; }
 
+        public int Position { get; internal set; } = 1;
+
         public Track(string title, TimeSpan duration, bool isSingle = false)
         {
             if (string.IsNullOrWhiteSpace(title))

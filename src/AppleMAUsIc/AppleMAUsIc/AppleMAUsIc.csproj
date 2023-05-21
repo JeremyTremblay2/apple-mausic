@@ -75,7 +75,7 @@
 		<MauiImage Include="Resources\Images\Covers\paradize.jpg" />
 		<MauiImage Include="Resources\Images\Covers\recovery.jpg" />
 		<MauiImage Include="Resources\Images\Covers\speak_no_evil.jpg" />
-		<MauiImage Include="Resources\Images\Covers\native_cover.png" />
+		<MauiImage Include="Resources\Images\Covers\native_cover.jpg" />
 	</ItemGroup>
 
 	<ItemGroup>
@@ -96,6 +96,9 @@
 	    <SubType></SubType>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\CustomControls\TrackCellView.xaml">
+	    <SubType></SubType>
+	  </MauiXaml>
+	  <MauiXaml Update="Pages\LibraryPage.xaml">
 	    <SubType></SubType>
 	  </MauiXaml>
 	</ItemGroup>
@@ -131,6 +134,7 @@
 	  <None Remove="Resources\Images\Covers\recovery.jpg" />
 	  <None Remove="Resources\Images\Covers\speak_no_evil.jpg" />
 	  <None Remove="Resources\Images\Covers\native.jpg" />
+	  <None Remove="Resources\Images\Covers\native_cover.jpg" />
 	</ItemGroup>
 	<ItemGroup>
 	  <Folder Include="Resources\Images\Icons\" />

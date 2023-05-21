@@ -1,6 +1,6 @@
 ﻿namespace AppleMAUsIc.Pages.CustomControls;
 
-public partial class TrackCellView : ContentView
+public partial class TrackCellView : ViewCell
 {
     public static readonly BindableProperty IsSingleProperty =
         BindableProperty.Create(nameof(IsSingle), typeof(bool), typeof(TrackCellView), false);
@@ -21,9 +21,9 @@ public partial class TrackCellView : ContentView
     }
 
     public static readonly BindableProperty TrackTitleProperty =
-        BindableProperty.Create(nameof(TrackTitle), typeof(string), typeof(TrackCellView), string.Empty);
+        BindableProperty.Create(nameof(Title), typeof(string), typeof(TrackCellView), string.Empty);
 
-    public string TrackTitle
+    public string Title
     {
         get => (string) GetValue(TrackCellView.TrackTitleProperty);
         set => SetValue(TrackCellView.TrackTitleProperty, value);
@@ -31,7 +31,7 @@ public partial class TrackCellView : ContentView
 
     public TrackCellView()
 	{
-		InitializeComponent();
         BindingContext = this;
+        InitializeComponent();
     }
 }

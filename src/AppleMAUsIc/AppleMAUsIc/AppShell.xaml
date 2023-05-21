@@ -28,7 +28,7 @@
 
         <ShellContent
             Title="Library"
-            ContentTemplate="{DataTemplate local:MainPage}"
+            ContentTemplate="{DataTemplate pages:LibraryPage}"
             Route="MainPage"
             Icon="ic_music_library"/>
 

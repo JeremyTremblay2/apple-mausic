@@ -51,6 +51,7 @@ namespace AppleMAUsIc.Model
             ReleaseDate = releaseDate;
             SoundQuality = soundQuality;
             Tracks = tracks == null ? new List<Track>() : new List<Track>(tracks);
+            for (int i = 0; i < tracks.Count; i++) tracks[i].Position = i + 1;
             Copyright = copyright;
         }
 
