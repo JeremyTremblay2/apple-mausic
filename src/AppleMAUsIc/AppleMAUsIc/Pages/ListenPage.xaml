@@ -135,7 +135,7 @@
 
             <Line StrokeThickness="1" Margin="0, 28, 0, 0"/>
 
-            <CollectionView
+            <!--CollectionView
                 ItemsSource="{Binding Tracks}"
                 Margin="-12, 0, 0, 0"
                 SelectionMode="None"
@@ -210,7 +210,7 @@
             <Label
                 Text="{Binding Copyright}"
                 FontSize="Small"
-                TextColor="{StaticResource Gray400}" />
+                TextColor="{StaticResource Gray400}" /-->
 
         </VerticalStackLayout>
     </ScrollView>

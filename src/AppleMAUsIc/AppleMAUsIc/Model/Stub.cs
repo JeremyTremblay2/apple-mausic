@@ -13,7 +13,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Different World",
                         "Alan Walker",
-                        "different_world.png",
+                        "different_world.jpg",
                         "Electro House",
                         new DateTime(2018, 12, 14),
                         "℗ 2018 Alan Walker",
@@ -40,7 +40,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Ensemble",
                         "Kendji Girac",
-                        "ensemble.png",
+                        "ensemble.jpg",
                         "Pop",
                         new DateTime(2015, 10, 30),
                         "℗ 2015 Kendji Girac",
@@ -65,7 +65,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Everest",
                         "Soprano",
-                        "everest.png",
+                        "everest.jpg",
                         "Rap",
                         new DateTime(2016, 10, 14),
                         "℗ 2016 Rec. 118 / Warner Music France",
@@ -95,7 +95,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "La Fête est Finie",
                         "Orelsan",
-                        "la_fete_est_finie.png",
+                        "la_fete_est_finie.jpg",
                         "Rap",
                         new DateTime(2017, 10, 20),
                         "℗ 2017 7th Magnitude / Wagram Music",
@@ -121,7 +121,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Mini World",
                         "Indila",
-                        "mini_world.png",
+                        "mini_world.jpg",
                         "Pop",
                         new DateTime(2014, 2, 24),
                         "℗ 2014 Capitol Music France",
@@ -143,7 +143,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Multitude",
                         "Stromae",
-                        "multitude.png",
+                        "multitude.jpg",
                         "Pop",
                         new DateTime(2022, 3, 4),
                         "℗ 2022 Mosaert",
@@ -167,7 +167,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Native",
                         "OneRepublic",
-                        "native.png",
+                        "native_cover.jpg",
                         "Pop",
                         new DateTime(2013, 3, 22),
                         "℗ 2013 Mosley Music/Interscope Records",
@@ -191,7 +191,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Night Visions",
                         "Imagine Dragons",
-                        "night_visions.png",
+                        "night_visions.jpg",
                         "Indie rock",
                         new DateTime(2012, 9, 4),
                         "℗ 2012 Interscope Records",
@@ -213,7 +213,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Paradize",
                         "Indochine",
-                        "paradize.png",
+                        "paradize.jpg",
                         "Rock",
                         new DateTime(2002, 3, 14),
                         "℗ 2002 Sony Music Entertainment (France) S.A.",
@@ -240,7 +240,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Recovery",
                         "Eminem",
-                        "recovery.png",
+                        "recovery.jpg",
                         "Hip Hop",
                         new DateTime(2010, 6, 18),
                         "℗ 2010 Aftermath Records",
@@ -269,7 +269,7 @@ namespace AppleMAUsIc.Model
                     new Album(
                         "Speak No Evil",
                         "Wayne Shorter",
-                        "speak_no_evil.png",
+                        "speak_no_evil.jpg",
                         "Jazz",
                         new DateTime(1966, 12, 24),
                         "℗ 1966 Blue Note Records",
